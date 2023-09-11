@@ -1,0 +1,39 @@
+.wrapper {
+    position: relative;
+}
+
+.para {
+    position: absolute;
+    font-size: xx-large;
+    color: peru;
+}
+
+#image-id {
+    /* position: relative; */
+    height: 400px;
+    width: 400px;
+}
+
+#para2 {
+    left: 325px;
+    transform: translate(5, 0);
+}
+
+#para4 {
+    left: 325px;
+    bottom: 0px;
+}
+
+#para3 {
+    bottom: 0px;
+}
+
+#para5 {
+    left: 162px;
+    bottom : 150px;
+}
+ 
+.div-another {
+    height: 1000px;
+    background-color: plum;
+}

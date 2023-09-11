@@ -1,0 +1,104 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper
+{
+    background-color: rgb(247, 235, 213);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item
+{
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 500px;
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-image
+{
+    background-color: pink;
+    height: 100%;
+    width: 45%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.final-image
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.item-description
+{
+    background-color: white;
+    height: 100%;
+    width: 55%;
+    padding: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.item-type
+{
+    color:rgb(78, 77, 77);
+    letter-spacing: 2px;
+}
+
+.item-name
+{
+    font:bolder;
+    font-size: 25px;
+}
+
+.item-discounted-price
+{
+    color: green;
+    font-size: 30px;
+    font: bolder;
+}
+
+.item-original-price
+{
+    font-size: 14px;
+    text-decoration:line-through
+}
+
+.button
+{
+    border-radius: 15px;
+    background-color: rgb(19, 68, 19);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    gap: 10px;
+}
+
+.add-to-cart-icon
+{
+    height: 40%;
+    object-fit: cover;
+}
+
+

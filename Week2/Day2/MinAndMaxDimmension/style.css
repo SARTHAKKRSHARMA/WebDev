@@ -1,0 +1,12 @@
+.box {
+    max-height: 400px;
+    max-width: 400px;
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.mydiv {
+    margin-top: 15px;
+    border: 1px solid black;
+    min-height: 100px;
+}
