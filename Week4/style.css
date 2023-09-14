@@ -1,0 +1,13 @@
+.card:hover .top-image
+{
+    background-color: lightblue;
+    border: none;
+}
+
+.card:hover .stroke-boder
+{
+    filter: drop-shadow( 4px 4px 12px rgba(0, 0, 0, .7));
+}
+
+
+  
