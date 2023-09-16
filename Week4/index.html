@@ -366,7 +366,7 @@
 
 
     <!-- feature-section-2 -->
-    <section class="w-full bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[8rem] pb-[350px] mt-14">
+    <section class="w-full bg-[url(./images/feature-section-2BG.svg)] bg-no-repeat bg-cover pt-[8rem] pb-[350px] mt-14 overflow-x-hidden">
         <div class="w-10/12 max-w-[1080px] pt-2 mx-auto relative flex flex-col justify-between items-center">
             <h2 class="font-mullish text-white font-bold text-2xl leading-[1.2]">Explore Razorpay Buisness Banking</h2>
             <div class="w-6 h-1 bg-greenLight mt-4 mb-20"></div>
@@ -383,7 +383,7 @@
                             <li class="flex gap-2"><i data-feather="check" class="text-greenLight"></i><span>Simplify and track spends with Corporate Cards</span></li>
                             <li class="flex gap-2"><i data-feather="check" class="text-greenLight"></i><span>View financial insights at a glance</span></li>                            
                         </ul>
-                        <div class="flex group w-full gap-10 justify-start items-center">
+                        <div class="flex w-full gap-10 justify-start items-center">
                             <button class="text-white font-mullish font-bold bg-lightBlue py-[14px] pl-[20px] pr-[80px] rounded-md flex items-center justify-start gap-5 relative transition-all duration-200 hover:bg-lightBlue500">
                                 Sign Up 
                                 <div class="w-12 h-[60px] bg-greenLight absolute right-4 skew-x-[20deg] flex justify-center items-center">
@@ -392,7 +392,9 @@
                                     </svg>
                                 </div>
                             </button>
-                            <a href="" target="_blank" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More <div class="inline-block h-3 w-3 p-0 border-t-2 border-r-2 border-lightBlue rotate-45  group-hover:border-grayBlue"></div></a>
+                            <div class="group">
+                                <a href="" target="_blank" class="font-mullish font-bold text-lightBlue500 group-hover:text-grayBlue transition-all duration-200">Know More <div class="inline-block h-3 w-3 p-0 border-t-2 border-r-2 border-lightBlue rotate-45  group-hover:border-grayBlue"></div></a>
+                            </div>
                         </div>
                     </div>
                     <div>
@@ -505,9 +507,25 @@
                         </div>
                     </div>                 
                 </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-10 w-full p-10 border border-slate-700 mb-[150px]">
+                <p class="text-white font-mullish text-[18px]">Check out the live demo to learn how RazorpayX works.  <span class="font-mullish font-bold filter drop-shadow-md">No sign-up required!</span></p>
+                <div class="flex cursor-pointer items-center relative font-mullish text-white bg-lightBlue py-4 pl-4 pr-24 rounded-md transition-all duration-200 hover:bg-lightBlue500">
+                    Check out the demo
+                    <div class="absolute right-8 bg-greenLight w-[50px] h-[60px] skew-x-[20deg] flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="-skew-x-[20deg]" width="80" height="50" viewBox="0 0 100 50">
+                            <path fill="white" d="M10 25 L50 25 M45 20 L60 25 L45 30" stroke="white" stroke-width="2"/>
+                        </svg>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
+    
 
     <script>
         feather.replace()

@@ -8,7 +8,7 @@
 .card:hover .stroke-boder
 {
     transition: all 200ms;
-    filter: drop-shadow( 4px 4px 12px rgba(0, 0, 0, .7));
+    filter: drop-shadow( 4px 4px 5px #A3A8A8);
 }
 
 
