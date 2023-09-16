@@ -1,11 +1,13 @@
+
 .card:hover .top-image
 {
+    transition: all 200ms;    
     background-color: lightblue;
-    border: none;
 }
 
 .card:hover .stroke-boder
 {
+    transition: all 200ms;
     filter: drop-shadow( 4px 4px 12px rgba(0, 0, 0, .7));
 }
 
