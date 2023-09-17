@@ -12,4 +12,36 @@
 }
 
 
+.companies-list
+{
+    animation: move-image 20s linear 0s infinite normal;
+}
+
+@keyframes move-image 
+{
+    0%
+    {
+        top: 0px;
+    }
+    /* 10%
+    {
+        top : -200px
+    }   
+
+    40%
+    {
+        top: -400px;
+    }
+
+    80%
+    {
+        top: -600px;
+    } */
+
+    100%
+    {
+        top: -800px;
+    }
+}
+
   
