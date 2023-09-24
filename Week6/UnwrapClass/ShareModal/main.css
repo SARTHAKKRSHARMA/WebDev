@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.red-circle
+{
+    animation: move-right 5s linear 0s infinite alternate;
+}
+
+@keyframes move-right {
+    100%
+    {
+        left: 170px;
+        top: 40px;
+    }
+}
+
+.blue-circle
+{
+    animation: move-up 5s linear 0s infinite alternate;
+}
+
+@keyframes move-up {
+    100%
+    {
+        bottom: 50px;
+        right: 172px;
+    }    
+}
+
+
+.active
+{
+    transform: scale(1);
+}
+

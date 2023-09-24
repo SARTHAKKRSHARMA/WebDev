@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Modal</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section class="bg-black h-[100vh] w-[100vw] overflow-hidden">
+        <div class="h-full w-[60%] mx-auto flex justify-center items-center relative">
+            <div class="w-[7rem] h-[7rem] rounded-full bg-red-400 shadow-red-400 shadow-[0_0_40px] absolute left-32 top-8 z-[10] red-circle"></div>
+            <div class="w-[10rem] h-[10rem] rounded-full bg-blue-700 shadow-blue-700 shadow-[0_0_80px] absolute bottom-8 right-36 z-[10] blue-circle"></div>
+            <div class="w-[40%] h-[60%] mx-auto bg-gray-700 border-white border-[1px] bg-opacity-50 backdrop-blur-sm rounded-md relative flex flex-col justify-evenly items-center z-[100]">
+                <div><img src="./assets/profile-image.webp" alt="" width="100px"></div>
+                <h2 class="text-white text-2xl font-bold">Love Babbar</h2>
+                <p class="text-white opacity-60 font-bold text-[12px]">Founder, Code Help</p>
+                <div class="flex flex-row w-[80%] mx-auto justify-center items-center gap-4">
+                    <button onclick="displayShareModal()" class="text-white flex flex-row justify-center items-center w-[50%] text-[10px] border-[1px] p-2 gap-2 transition-all duration-200 hover:bg-white hover:text-black"><i class="fa-solid fa-share"></i><span>Share My Profile</span></button>
+                    <button class="text-white w-[50%] text-[10px] border-[1px] p-2  transition-all duration-200 hover:bg-white hover:text-black">Follow Me</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute left-0 right-0 top-0 bottom-0 bg-gray-400 bg-opacity-50 z-[100] flex justify-center items-center scale-0 transition-all ease-in-out duration-[700ms] " id="share-modal">
+            <div class="w-[30%] rounded-md border-[1px] border-white bg-black bg-opacity-50 backdrop-blur-sm z-[100] flex flex-col p-2">
+                <div class="flex flex-row w-full font-bold text-2xl justify-between items-center text-white">
+                    <h1>Share My Profile</h1>
+                    <button onclick="closeShareModal()" id="close-share-modal"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="w-full h-[1px] bg-gray-400 mt-2 mb-4"></div> 
+                <p class="text-white text-[12px] mb-3">Share this via</p>
+                <div class="flex flex-row w-full justify-between items-center">
+                    <button class="text-blue-500 border-blue-500 border-[1px] px-4 py-2 rounded-full"><i class="fa-brands fa-facebook-f"></i></button>
+                    <button class="text-blue-500 border-blue-500 border-[1px] px-4 py-2 rounded-full"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="text-pink-500 border-pink-500 border-[1px] px-4 py-2 rounded-full"><i class="fa-brands fa-instagram"></i></button>
+                    <button class="text-green-500 border-green-500 border-[1px] px-4 py-2 rounded-full"><i class="fa-brands fa-whatsapp"></i></i></button>
+                    <button class="text-blue-500 border-blue-500 border-[1px] px-4 py-2 rounded-full"><i class="fa-brands fa-telegram"></i></button>
+                </div>      
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
