@@ -15,16 +15,19 @@ let password = "";
 let passwordLength = 10;
 let checkCount = 1;
 handleSlider(passwordLength);
+setIndicator("#ccc");
 
 function handleSlider()
 {
     inputSlider.value = passwordLength;
     lengthDisplay.textContent = passwordLength;
+    let percentage = passwordLength * 5;
+    inputSlider.style.cssText = `background-image: linear-gradient(to right, var(--vb-violet) 0%, var(--vb-violet) ${percentage}%, transparent ${percentage}%, transparent 100%);`
 }
 
 function setIndicator(color)
 {
-    indicator.computedStyleMap.backgroundColor = color;
+    indicator.style.cssText = `background-color: ${color}; box-shadow: 0 0 20px ${color};`;
 }
 
 
@@ -64,8 +67,8 @@ function calcStrength()
 
     if(uppercaseCheck.checked) hasUpper = true;
     if(lowercaseCheck.checked) hasLower = true;
-    if(hasNumber.checked) hasLower = true;
-    if(hasSymbol.checked) hasSymbol = true;
+    if(numbersCheck.checked) hasLower = true;
+    if(symbolsCheck.checked) hasSymbol = true;
 
     if(hasUpper && hasLower && (hasNumber || hasSymbol) && password.length >= 8)
     {
@@ -93,6 +96,7 @@ async function copyContent()
     {
         copyMsg.textContent = "failed";
     }
+    console.log("Adding active");
     copyMsg.classList.add("active");
     setTimeout(() => copyMsg.classList.remove("active"), 2000);       
 }
