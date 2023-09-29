@@ -1,0 +1,298 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, blue, lightcyan);
+}
+
+
+.container
+{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+header h1
+{
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.tab-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab
+{
+    cursor: pointer;
+    transition: all 200ms linear;
+    padding: 2px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.tab.current-tab
+{
+    background-color: rgba(219, 226, 239, 0.5);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+
+.weather-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.grant-location-container
+{
+    position: absolute;
+    top: 40px;
+    transform: scale(0);
+    transition: all 200ms linear;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.grant-location-container div
+{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(139, 206, 139)
+}
+
+.grant-location-container div i
+{
+    font-size: 30px;
+    color: white;
+    transition: all 200ms linear;
+}
+
+.grant-location-container h2
+{
+    color: white;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+.grant-location-container p
+{
+    color: white;
+}
+
+.btn
+{
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(147, 196, 246);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+
+
+.grant-location-container.active
+{
+    transform: scale(1);
+}
+
+
+.form-container
+{
+    position: absolute;
+    top: 10px;
+    transform: scale(0);
+    transition: all 200ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-container input
+{
+    appearance: none;
+    height: 35px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.form-container button
+{
+    height: 35px;
+}
+.form-container.active
+{
+    transform: scale(1);
+}
+
+.loading-screen-container
+{
+    position: absolute;
+    top: 80px;
+    transform: scale(0);
+    transition: all 150ms linear;
+}
+
+.loading-screen-container div
+{
+    border-radius: 50%;
+    border: 4px solid white;
+    width: 70px;
+    height: 70px;
+    border-top: 4px solid green;
+    animation: spin 3s ease-in-out 0s infinite;
+}
+
+.loading-screen-container.active
+{
+    transform: scale(1);
+}
+@keyframes spin {
+    0%
+    {
+        transform: rotate(0);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.user-info-container
+{
+    position: absolute;
+    top: 80px;
+    transform: scale(0);
+    transition: all 200ms linear;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    font-size: 30px;
+    gap: 20px;
+}
+
+.name
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.description
+{
+    font-size: 20px;
+    margin-bottom: -20px;
+}
+
+.temperature
+{
+    margin-top: -20px;
+    font-weight: 600;
+}
+.temperature::after
+{
+    content: " °C";
+    font-weight: 600;
+}
+
+.parameter-container
+{
+    display: flex;
+    gap: 30px;
+}
+
+.parameter
+{
+    background-color: rgba(219, 226, 239, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wind-speed::after
+{
+    content: " m/s";
+}
+
+.humidity::after
+{
+    content: " %";
+}
+
+.cloud::after
+{
+    content: " %";
+}
+.user-info-container.active
+{
+    transform: scale(1);
+}
+
+.not-found-container
+{
+    transform: scale(0);
+    position: absolute;
+    top: 80px;
+    transition: all 200ms linear;
+}
+
+.not-found-container.active
+{
+    transform: scale(1);
+}

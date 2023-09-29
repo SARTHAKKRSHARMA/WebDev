@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <header>
+                <h1>Weather App</h1>
+            </header>
+            <main>
+                <div class="tab-container">
+                    <p class="tab" data-user-weather>Your Weather</p>
+                    <p class="tab" data-search-weather>Search Weather</p>
+                </div>
+                
+                <div class="weather-container">
+                    <div class="grant-location-container">
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <h2>Grant Location Access</h2>
+                        <p>Allow Access to get weather information</p>
+                        <button class="btn" data-grant-access>Grant Access</button>
+                    </div>
+
+                    <form action="" class="form-container" data-search-form>
+                        <input type="text" placeholder="Search for city..." data-search-input>
+                        <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+
+                    <div class="loading-screen-container">
+                        <div></div>    
+                    </div>      
+
+                    <div class="not-found-container" not-found-container>
+                        <img src="./assets/not-found.png" alt="" loading="lazy" class="not-found"  width="400px" height="400px">
+                    </div>
+
+                    <div class="user-info-container">
+                        <div class="name">
+                            <p data-city-name></p>
+                            <img data-country-icon loading="lazy" width="20px">
+                        </div> 
+
+                        <p data-weather-description class="description"></p>
+                        
+                        <img data-weather-icon loading="lazy">
+                        
+                        <p data-temperature class="temperature"></p>
+
+                        <div class="parameter-container">
+                            <div class="parameter">
+                                <i class="fa-solid fa-wind"></i>
+                                <p>Windspeed</p>
+                                <p data-wind-speed class="wind-speed"> </p>
+                            </div>
+
+                            <div class="parameter">
+                                <img src="./images/humidity.png" alt="" width="20" height="20">
+                                <p>Humidity</p>
+                                <p data-humidity class="humidity"></p>
+                            </div>
+
+                            <div class="parameter">
+                                <i class="fa-solid fa-cloud"></i>
+                                <p>Clouds</p>
+                                <p data-clouds class="cloud"> </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
