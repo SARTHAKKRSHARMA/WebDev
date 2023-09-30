@@ -7,7 +7,6 @@ let currPlayer = "X";
 let gameOver = false;
 let winner = null;
 let boxAvailable = 9; 
-
 let playerXMoves = {
     "row" : {},
     "col" : {},
