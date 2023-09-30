@@ -142,6 +142,8 @@ function getLocation()
 
         function error()
         {
+            console.log("Here");
+            grantAccessContainer.classList.remove("active");
             notFoundContainer.classList.add("active");
         }
 
