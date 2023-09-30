@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <nav class="">
+                <h1>DevDetective</h1>
+                <div>
+                    <p>Dark</p>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+            </nav>
+
+            <main>
+                <div class="input-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Enter a Github username....." data-username>
+                    <button class="cancel-btn">x</button>
+                    <button class="search-btn" data-search-button>Search</button>
+                </div>
+
+                <div class="loader-container">
+                    
+                </div>
+
+                <div class="no-details-found">
+                    <img src="../../Week7/WeatherApp/assets/not-found.png" alt="" loading="lazy" width="400px">
+                </div>
+
+                <div class="user-details">
+                    <div class="user-image-container">
+                        <img src="" loading="lazy" data-user-image>
+                    </div>
+                    <div class="user-info-container">
+                        <div class="user-basic-info-container">
+                            <p data-user-name></p>
+                            <p data-user-joining-data></p>
+                        </div>
+                        <a href="" data-user-url></a>
+                        <p data-user-bio></p>
+                        <div class="stats-container" data-stats-information>
+                            <div class="stats-subcontainer">
+                                <p class="stats-para">Repos</p>
+                                <p class="stats" data-stats-repo></p>
+                            </div>
+                            <div class="stats-subcontainer">
+                                <p class="stats-para">Followers</p>
+                                <p class="stats" data-stats-followers></p>
+                            </div>
+                            <div class="stats-subcontainer">
+                                <p class="stats-para">Following</p>
+                                <p class="stats" data-stats-following></p>
+                            </div>                        
+                        </div>
+                        <div class="additional-info-container">
+                            <div class="additional-info-subcontainer">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p user-location></p>
+                            </div>
+                            <div class="additional-info-subcontainer">
+                                <i class="fa-solid fa-link"></i>
+                                <p><a href="" user-blog></a></p>
+                            </div>
+                            <div class="additional-info-subcontainer">
+                                <i class="fa-brands fa-twitter"></i>
+                                <a href="" data-twitter></a>
+                            </div>
+                            <div class="additional-info-subcontainer">
+                                <i class="fa-regular fa-building"></i>
+                                <p data-organisation></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
