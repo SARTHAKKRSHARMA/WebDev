@@ -1,0 +1,21 @@
+.product-item
+{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.products
+{
+    width: 40%;
+    margin: 2rem auto;
+    background-color: yellow;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    gap: 7px;
+}

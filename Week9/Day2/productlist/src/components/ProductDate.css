@@ -1,0 +1,29 @@
+.product-date
+{
+    background-color: rgb(78, 78, 78);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 1rem;
+    color: white;
+}
+
+.product-date_month
+{
+    font-size: 12px;
+}
+
+.product-date_year
+{
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+.product-date_day
+{
+    font-size: 18px;
+    font-weight: 600;
+}
