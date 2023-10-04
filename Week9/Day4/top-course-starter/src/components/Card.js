@@ -8,7 +8,7 @@ export default function Card(props)
     const [liked, changeLiked] = useState(false);    
     function likeHandler()
     {
-        if(likedCourses(props.course.id))
+        if(likedCourses.includes(props.course.id))
         {
            setLikedCourses((prev) => prev.filter((cid) => cid !== props.course.id));
            toast.warning("Course removed from your favorites"); 
@@ -31,7 +31,7 @@ export default function Card(props)
                 <img src={props.course.image.url} alt={props.course.image.alt}></img>
                 <div className='absolute bottom-3 right-2 rounded-full w-[40px] h-[40px] bg-white grid place-items-center'>
                     <button onClick={likeHandler}>
-                        {liked ? <FcLike fontSize="1.75rem"/> : <FcLikePlaceholder fontSize={"1.75rem"}/>} 
+                        {likedCourses.includes(props.course.id) ? <FcLike fontSize="1.75rem"/> : <FcLikePlaceholder fontSize={"1.75rem"}/>} 
                     </button>
                 </div>
             </div>
