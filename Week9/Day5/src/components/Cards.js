@@ -7,7 +7,7 @@ export default function Cards(props)
     const index = props.index;
     return (
         <div>
-            {reviews.filter((review, _index) => index === _index).map((review) => <Card key={review.id} review={review}></Card>)}
+            <Card key={reviews[index].id} review={reviews[index]}></Card>
         </div>
     )
 }

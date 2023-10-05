@@ -16,7 +16,7 @@ export default function Card(props)
             </div>
             <div className='flex flex-col gap-2 mt-2 items-center text-center mb-5'>
                 <RiDoubleQuotesL />
-                <div className='h-[120px]'>{props.review.text}</div>
+                <div className='h-[120px] flex flex-wrap justify-center items-center my-auto'>{props.review.text}</div>
                 <RiDoubleQuotesR />
             </div>
         </div>
